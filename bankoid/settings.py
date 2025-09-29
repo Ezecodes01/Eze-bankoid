@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True if os.getenv('DEBUG').lower() == 'true' else False
 
 
-ALLOWED_HOSTS = [os.getenv('ALLOWED_HOST', 'localhost').strip().split(',')]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOST', 'localhost').strip().split(',')
 
 
 # Application definition
