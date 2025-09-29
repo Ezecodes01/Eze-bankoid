@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Bankoid{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo"></div>
+      <div class="nav-item {% if request.resolver_match.url_name == 'client-dashboard' %}active{% endif %}">
+        <a href="{% url 'client-dashboard' %}">🏠</a>
+      </div>
+      <div class="nav-item {% if request.resolver_match.url_name == 'client-transactions' %}active{% endif %}">
+        <a href="{% url 'client-transactions' %}">💳</a>
+      </div>
+      <div class="nav-item {% if request.resolver_match.url_name == 'client-transfer' %}active{% endif %}">
+        <a href="{% url 'client-transfer' %}">💸</a>
+      </div>
+      <div class="nav-item {% if request.resolver_match.url_name == 'client-page' %}active{% endif %}">
+        <a href="{% url 'client-page' %}">👤</a>
+      </div>
+      <div class="nav-item {% if request.resolver_match.url_name == 'client-pin' %}active{% endif %}">
+        <a href="{% url 'client-pin' %}">🛡</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header">
+        <h1>{% block header %}Dashboard{% endblock %}</h1>
+        <div class="header-right">
+          <div class="search-box">
+            <div class="search-icon">🔍</div>
+            <form action="{% url 'Client-search-page' %}">
+              <input type="text" class="search-input" name="search" placeholder="Search">
+            </form>
+
+          </div>
+          <div class="header-icons">
+            <button class="icon-btn">💬</button>
+            <button class="icon-btn">🔔</button>
+            <a href="/logout/" class="logout-btn">Logout</a>
+          </div>
+          <div class="profile-pic">
+            {{ request.user.username|first|upper }}
+          </div>
+        </div>
+      </div>
+
+      <!-- Page-specific content -->
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</body>
+
+</html>

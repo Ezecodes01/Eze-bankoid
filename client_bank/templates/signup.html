@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<style>
+
+</style>
+
+<body>
+    <main class="signup_page">
+        
+        <section>
+           <h1>Welcome to The Signup Page</h1>
+
+           <p>Signup below</p>
+           {% if error %}
+              <h4 style="color: red; text-align : center;">{{ error }}</h4>
+            {% endif %}  
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="email">
+                    <label for="">Email Address</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="">Name</label>
+                    <input type="name" name="" id="">
+                </div>
+
+                <div class="password">
+                    <label for="">Password</label>
+                    <input type="password" name="password1">
+                </div>
+
+                <div>
+                    <label for="">Password_confirmation</label>
+                    <input type="password" name="password2" id="">
+                </div>
+
+                <button type="submit">Signup</button>
+            </form>
+            <div><p>Already have an account?</p>
+            <a href="/login/">Login</a></div>
+            
+        </section>
+    </main>
+</body>
+<script src='{% static "js/base.js" %}'></script>
+
+</html>

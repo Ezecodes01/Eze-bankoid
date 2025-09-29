@@ -1,0 +1,264 @@
+Microsoft Windows [Version 10.0.22000.2538]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Eze>Cd C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson
+
+C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>python -m venv eze_env
+
+C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>
+C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>
+C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>
+C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>
+C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\eze_env\Scripts\activate
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>pip install django
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/django/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/django/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/django/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001458D705BD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/django/
+766j nhyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyuj8,.uyhjWARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001458D705E50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/django/
+ERROR: Could not find a version that satisfies the requirement django (from versions: none)
+ERROR: No matching distribution found for django
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>pip install django
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/django/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/django/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/django/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/django/
+Collecting django
+  Downloading django-5.2.5-py3-none-any.whl.metadata (4.1 kB)
+Collecting asgiref>=3.8.1 (from django)
+  Downloading asgiref-3.9.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Downloading sqlparse-0.5.3-py3-none-any.whl.metadata (3.9 kB)
+Collecting tzdata (from django)
+  Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading django-5.2.5-py3-none-any.whl (8.3 MB)
+   ---------------------------------------- 8.3/8.3 MB 1.3 MB/s eta 0:00:00
+Downloading asgiref-3.9.1-py3-none-any.whl (23 kB)
+Downloading sqlparse-0.5.3-py3-none-any.whl (44 kB)
+Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.9.1 django-5.2.5 sqlparse-0.5.3 tzdata-2025.2
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>django_admin -h
+'django_admin' is not recognized as an internal or external command,
+operable program or batch file.
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>django-admin -h
+
+Type 'django-admin help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>django-admin startproject bankoid
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson>cd bankoid
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>pip show django
+Name: Django
+Version: 5.2.5
+Summary: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+Home-page: https://www.djangoproject.com/
+Author:
+Author-email: Django Software Foundation <foundation@djangoproject.com>
+License: BSD-3-Clause
+Location: C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\eze_env\Lib\site-packages
+Requires: asgiref, sqlparse, tzdata
+Required-by:
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>python mange.py startapp customer_bank
+python: can't open file 'C:\\Users\\Eze\\Documents\\PYTHON-CLASS\\django_lesson\\bankoid\\mange.py': [Errno 2] No such file or directory
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>python manage.py startapp client_bank
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>python manage.py -h
+
+Type 'manage.py help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[auth]
+    changepassword
+    createsuperuser
+
+[contenttypes]
+    remove_stale_contenttypes
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+
+[sessions]
+    clearsessions
+
+[staticfiles]
+    collectstatic
+    findstatic
+    runserver
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 25, 2025 - 12:40:54
+Django version 5.2.5, using settings 'bankoid.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[25/Aug/2025 12:43:36] "GET / HTTP/1.1" 200 12068
+Not Found: /favicon.ico
+[25/Aug/2025 12:43:37] "GET /favicon.ico HTTP/1.1" 404 2209
+[25/Aug/2025 12:51:13] "GET /admin HTTP/1.1" 301 0
+[25/Aug/2025 12:51:14] "GET /admin/ HTTP/1.1" 302 0
+[25/Aug/2025 12:51:15] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[25/Aug/2025 12:51:15] "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[25/Aug/2025 12:51:15] "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[25/Aug/2025 12:51:15] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[25/Aug/2025 12:51:16] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[25/Aug/2025 12:51:16] "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[25/Aug/2025 12:51:16] "GET /static/admin/css/login.css HTTP/1.1" 200 951
+[25/Aug/2025 12:51:16] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>python manage.py makemigrations client_bank
+No installed app with label 'client_bank'.
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>python manage.py makemigrations
+No changes detected
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>python manage.py createsuperuser
+Username (leave blank to use 'eze'): eze
+Email address: chikwendujohnpaul6@gmail.com
+Password:
+Password (again):
+Superuser created successfully.
+
+(eze_env) C:\Users\Eze\Documents\PYTHON-CLASS\django_lesson\bankoid>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2025 - 13:52:15
+Django version 5.2.5, using settings 'bankoid.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[25/Aug/2025 13:52:48] "GET / HTTP/1.1" 200 12068
+[25/Aug/2025 13:52:56] "GET /admin/ HTTP/1.1" 302 0
+[25/Aug/2025 13:52:56] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[25/Aug/2025 13:52:56] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Aug/2025 13:52:56] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[25/Aug/2025 13:52:56] "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[25/Aug/2025 13:52:56] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[25/Aug/2025 13:52:56] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[25/Aug/2025 13:52:56] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[25/Aug/2025 13:52:56] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Aug/2025 13:53:37,068] - Broken pipe from ('127.0.0.1', 50511)
+[25/Aug/2025 13:53:39] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[25/Aug/2025 13:53:39,970] - Broken pipe from ('127.0.0.1', 50512)
+Forbidden (CSRF token from POST incorrect.): /admin/login/
+[25/Aug/2025 13:53:40] "POST /admin/login/?next=/admin/ HTTP/1.1" 403 2503
+Forbidden (CSRF token from POST incorrect.): /admin/login/
+[25/Aug/2025 13:53:46] "POST /admin/login/?next=/admin/ HTTP/1.1" 403 2503
+[25/Aug/2025 13:53:50] "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[25/Aug/2025 13:53:51] "GET /admin/ HTTP/1.1" 200 6095
+[25/Aug/2025 13:53:51] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[25/Aug/2025 13:53:51] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Aug/2025 13:53:51] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Aug/2025 13:55:50] "GET /admin/auth/user/add/ HTTP/1.1" 200 11993
+[25/Aug/2025 13:55:50] "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+[25/Aug/2025 13:55:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[25/Aug/2025 13:55:51] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[25/Aug/2025 13:55:51] "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+[25/Aug/2025 13:55:51] "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[25/Aug/2025 13:55:51] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+[25/Aug/2025 13:55:51] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+[25/Aug/2025 13:55:51] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[25/Aug/2025 13:55:51] "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[25/Aug/2025 13:55:51] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[25/Aug/2025 13:55:51] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[25/Aug/2025 13:55:51] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[25/Aug/2025 13:55:51] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[25/Aug/2025 13:55:51] "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1480
+[25/Aug/2025 13:55:51] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171

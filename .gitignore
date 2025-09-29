@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Django Stuff
+*.log
+local_settings.py
+db.sqlite3
+media/
+static/
+
+# Virtual Environment
+venv/
+env/
+.venv/
+eze_env/
+# Editor/IDE files
+.idea/
+.vscode/
+*.swp
+*.bak
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
